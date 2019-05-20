@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">KnowNames</string>
+    <string name="edit_name">Enter correct name</string>
+    <string name="profile_picture">profile picture</string>
+    <string name="check_name">Check</string>
+    <string name="next_pic">Next</string>
+    <string name="back_pic">Back</string>
+    <string name="resultString1">Incorrect</string>
+    <string name="resultString2">Correct!</string>
+</resources>
