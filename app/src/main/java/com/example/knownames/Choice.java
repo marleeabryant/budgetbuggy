@@ -4,4 +4,6 @@ public class Choice {
 
     String storeName;
     double price;
+
+
 }
