@@ -10,8 +10,8 @@ public class Item {
     Choice price;
     int time;
     boolean listStatus;
-    Date lastPurchased;
-    ArrayList<Date> times;
+    int lastPurchased;
+    ArrayList<Integer> times;
     boolean budgetStatus;
 }
 
@@ -27,6 +27,26 @@ public Item(String ty, String nm, String strnm, double strpr, boolean need) {
         listStatus = false;
         budgetStatus = false;
     }
+}
+
+public void addDate(int tm, int lp) {
+    lastPurchased=lp;
+    time = tm;
+    int tmp = tm-lp;
+    Integer nextTime = new Integer(tmp);
+    changeBS(nextTime);
+    changeLS(nextTime);
+    times.add(tm);
+}
+
+public void changeBS(int nxTime) {
+    if(nxTime<30)
+        budgetStatus=true;
+}
+
+public void changeLS(int nxTime) {
+    if(nxTime<14)
+        listStatus=true;
 }
 
 

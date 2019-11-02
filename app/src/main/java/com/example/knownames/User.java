@@ -12,7 +12,6 @@ public class User {
     ArrayList<Item> userItems;
     ShoppingList currShopList;
     Double budgetAmt;
-    ArrayList<Store> preferredStores;
     int shopPeriod;
     int budgetPeriod;
 }
@@ -37,11 +36,6 @@ public class User {
 
     public void setShopPeriod(int per) {
         shopPeriod = per;
-    }
-
-    public void addStore(String name) {
-        Store pref = new Store(name);
-        preferredStores.add(pref);
     }
 
     public void addItem(String ty, String nm, boolean need) {
