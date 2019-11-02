@@ -34,14 +34,15 @@ public class MainActivity extends AppCompatActivity {
     public void signUp(View view)
     {
             loginBox.setHint(R.string.emailHint);
+            loginButton.setText(R.string.signUp);
     }
 
     public void signIn (View view)
     {
             loginBox.setHint(R.string.usernameHint);
+            loginButton.setText(R.string.signIn);
     }
 
-
-
+    //public void enterApp()
 
 }
