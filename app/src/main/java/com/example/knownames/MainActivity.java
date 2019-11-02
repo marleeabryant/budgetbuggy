@@ -10,7 +10,6 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private ImageView imageView;
-    private EditText editText;
     private TextView textView;
     private int imagePicker = 1;
 
@@ -45,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
             imagePicker = 3;
         }
     }
+
 
 
 

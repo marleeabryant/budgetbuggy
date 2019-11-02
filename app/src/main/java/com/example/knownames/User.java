@@ -16,3 +16,37 @@ public class User {
     int shopPeriod;
     int budgetPeriod;
 }
+
+    public User(String UN, String PW) {
+        Username = UN;
+        Password = PW;
+        currBudget = new Budget();
+        currShopList = new ShoppingList();
+        budgetAmt = 100.0;
+        shopPeriod = 14;
+        budgetPeriod = 30;
+    }
+
+    public void setBudgetAmt(double amt) {
+        budgetAmt = amt;
+    }
+
+    public void setBudgetPeriod(int per) {
+        budgetPeriod = per;
+    }
+
+    public void setShopPeriod(int per) {
+        shopPeriod = per;
+    }
+
+    public void addStore(String name) {
+        Store pref = new Store(name);
+        preferredStores.add(pref);
+    }
+
+    public void addItem(String ty, String nm, boolean need) {
+        Item myItem = new Item(ty,nm,need);
+        userItems.add(myItem);
+    }
+
+
