@@ -13,7 +13,9 @@ public class Budget {
         this.budItems = budItems;
         this.totalCost = totalCost;
     }
+   public Budget(){
 
+   }
     public ArrayList<Item> getBudItems() {
         return budItems;
     }

@@ -18,35 +18,35 @@ public class Item {
         type = ty;
         name = nm;
         price = new Choice(strnm, strpr);
-        if(need) {
+        if (need) {
             listStatus = true;
             budgetStatus = true;
-        }
-        else {
+        } else {
             listStatus = false;
             budgetStatus = false;
         }
     }
-}
 
-public void addDate(int tm, int lp) {
-    lastPurchased=lp;
-    time = tm;
-    int tmp = tm-lp;
-    Integer nextTime = new Integer(tmp);
-    changeBS(nextTime);
-    changeLS(nextTime);
-    times.add(tm);
-}
 
-public void changeBS(int nxTime) {
-    if(nxTime<30)
-        budgetStatus=true;
-}
+    public void addDate(int tm, int lp) {
+        lastPurchased = lp;
+        time = tm;
+        int tmp = tm - lp;
+        Integer nextTime = new Integer(tmp);
+        changeBS(nextTime);
+        changeLS(nextTime);
+        times.add(tm);
+    }
 
-public void changeLS(int nxTime) {
-    if(nxTime<14)
-        listStatus=true;
+    public void changeBS(int nxTime) {
+        if (nxTime < 30)
+            budgetStatus = true;
+    }
+
+    public void changeLS(int nxTime) {
+        if (nxTime < 14)
+            listStatus = true;
+    }
 }
 
 
