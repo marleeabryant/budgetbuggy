@@ -5,6 +5,6 @@
     <string name="check_name">Check</string>
     <string name="next_pic">Next</string>
     <string name="back_pic">Back</string>
-    <string name="resultString1">Incorrect</string>
+    <string name="resultString1">BudgetBuggy</string>
     <string name="resultString2">Correct!</string>
 </resources>
