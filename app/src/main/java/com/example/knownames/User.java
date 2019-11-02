@@ -15,7 +15,7 @@ public class User {
     ArrayList<Store> preferredStores;
     int shopPeriod;
     int budgetPeriod;
-}
+
 
     public User(String UN, String PW) {
         Username = UN;
@@ -27,26 +27,27 @@ public class User {
         budgetPeriod = 30;
     }
 
-    public void setBudgetAmt(double amt) {
-        budgetAmt = amt;
-    }
+        public void setBudgetAmt ( double amt){
+            budgetAmt = amt;
+        }
 
-    public void setBudgetPeriod(int per) {
-        budgetPeriod = per;
-    }
+        public void setBudgetPeriod ( int per){
+            budgetPeriod = per;
+        }
 
-    public void setShopPeriod(int per) {
-        shopPeriod = per;
-    }
+        public void setShopPeriod ( int per){
+            shopPeriod = per;
+        }
 
-    public void addStore(String name) {
-        Store pref = new Store(name);
-        preferredStores.add(pref);
-    }
+        public void addStore (String name){
+            Store pref = new Store(name);
+            preferredStores.add(pref);
+        }
 
-    public void addItem(String ty, String nm, boolean need) {
-        Item myItem = new Item(ty,nm,need);
-        userItems.add(myItem);
-    }
+        public void addItem (String ty, String nm, boolean need){
+            Item myItem = new Item(ty, nm, strprice, need);
+            userItems.add(myItem);
+        }
 
+    }
 
