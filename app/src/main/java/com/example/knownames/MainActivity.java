@@ -10,7 +10,6 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private ImageView imageView;
-    private EditText editText;
     private TextView textView;
     private int imagePicker = 1;
 
@@ -20,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         imageView = (ImageView) findViewById(R.id.image_View);
-        editText = (EditText) findViewById(R.id.edit_Text);
+
 
     }
 
@@ -46,34 +45,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void checkPic(View view) {
-        if (imagePicker == 1){
-            if(editText.getText().toString().equals("Sarah")){
-                textView.setText(R.string.resultString2);
-                textView.setTextColor(getResources().getColor(R.color.colorPrimary));
-            } else {
-                textView.setText(R.string.resultString1);
-                textView.setTextColor(getResources().getColor(R.color.resultColor));
-            }
-        }
-        if (imagePicker == 2){
-            if(editText.getText().toString().equals("Larry")){
-                textView.setText(R.string.resultString2);
-                textView.setTextColor(getResources().getColor(R.color.colorPrimary));
-            } else {
-                textView.setText(R.string.resultString1);
-                textView.setTextColor(getResources().getColor(R.color.resultColor));
-            }
-        }
-        if (imagePicker == 3){
-            if(editText.getText().toString().equals("Samantha")){
-                textView.setText(R.string.resultString2);
-                textView.setTextColor(getResources().getColor(R.color.colorPrimary));
-            } else {
-                textView.setText(R.string.resultString1);
-                textView.setTextColor(getResources().getColor(R.color.resultColor));
-            }
-        }
-    }
+
+
 
 }
