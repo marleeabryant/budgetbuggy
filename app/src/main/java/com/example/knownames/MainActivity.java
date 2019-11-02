@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         imageView = (ImageView) findViewById(R.id.image_View);
         editText = (EditText) findViewById(R.id.edit_Text);
-        textView = (TextView) findViewById(R.id.resultView);
+
     }
 
     public void changePicRight(View view) {
