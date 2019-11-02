@@ -3,6 +3,7 @@ package com.example.knownames;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -10,8 +11,10 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private ImageView imageView;
-    private TextView textView;
-    private int imagePicker = 1;
+    private EditText loginBox;
+    private TextView signinView;
+    private TextView signupView;
+    private Button loginButton;
 
 
     @Override
@@ -19,30 +22,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         imageView = (ImageView) findViewById(R.id.image_View);
+        signinView = (TextView) findViewById(R.id.signinView);
+        signupView = (TextView) findViewById(R.id.signupView);
+        loginBox = (EditText) findViewById(R.id.loginBox);
+        loginButton = (Button) findViewById(R.id.loginButton);
+
 
 
     }
 
-    public void changePicRight(View view) {
-        textView.setTextColor(getResources().getColor(R.color.resetColor));
-        if(imagePicker == 1){imageView.setImageResource(R.drawable.profile2);}
-        if(imagePicker == 2){imageView.setImageResource(R.drawable.profile3);}
-        if(imagePicker == 3){imageView.setImageResource(R.drawable.profile1);}
-        imagePicker++;
-        if (imagePicker == 4){
-            imagePicker = 1;
-        }
+    public void signUp(View view)
+    {
+            loginBox.setHint(R.string.emailHint);
     }
 
-    public void changePicLeft(View view) {
-        textView.setTextColor(getResources().getColor(R.color.resetColor));
-        if(imagePicker == 1){imageView.setImageResource(R.drawable.profile3);}
-        if(imagePicker == 2){imageView.setImageResource(R.drawable.profile1);}
-        if(imagePicker == 3){imageView.setImageResource(R.drawable.profile2);}
-        imagePicker--;
-        if (imagePicker == 0){
-            imagePicker = 3;
-        }
+    public void signIn (View view)
+    {
+            loginBox.setHint(R.string.usernameHint);
     }
 
 

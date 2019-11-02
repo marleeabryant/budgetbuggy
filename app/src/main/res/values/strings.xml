@@ -6,7 +6,9 @@
     <string name="next_pic">Next</string>
     <string name="back_pic">Back</string>
     <string name="resultString1">BudgetBuggy</string>
-    <string name="resultString2">Correct!</string>
+    <string name="signUp"> Sign up</string>
+    <string name="signIn"> Sign in</string>
     <string name="emailHint">Email</string>
+    <string name="usernameHint">Username</string>
     <string name="passwordHint">Password</string>
 </resources>
