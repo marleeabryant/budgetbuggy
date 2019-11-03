@@ -5,4 +5,6 @@
     <color name="colorAccent">#D81B60</color>
     <color name="resultColor">#FF5722</color>
     <color name="resetColor">#F9F9F9</color>
+    <color name="dullColor">#B11F88</color>
+    <color name="brightColor">#ED3995</color>
 </resources>

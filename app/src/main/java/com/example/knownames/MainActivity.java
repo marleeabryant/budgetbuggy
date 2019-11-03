@@ -14,7 +14,8 @@ public class MainActivity extends AppCompatActivity {
     private EditText loginBox;
     private TextView signinView;
     private TextView signupView;
-    private Button loginButton;
+    private Button signupButton;
+    private Button signinButton;
 
 
     @Override
@@ -25,24 +26,30 @@ public class MainActivity extends AppCompatActivity {
         signinView = (TextView) findViewById(R.id.signinView);
         signupView = (TextView) findViewById(R.id.signupView);
         loginBox = (EditText) findViewById(R.id.loginBox);
-        loginButton = (Button) findViewById(R.id.loginButton);
-
-
-
+        signupButton = (Button) findViewById(R.id.signUpButton);
+        signinButton = (Button) findViewById(R.id.signInButton);
     }
+
+//    public void enterApp(View view){
+//        Intent intent = new Intent(this, )
+//    }
 
     public void signUp(View view)
     {
             loginBox.setHint(R.string.emailHint);
-            loginButton.setText(R.string.signUp);
+            signupButton.setText(R.string.signUp);
+            signinButton.setBackgroundColor(getResources().getColor(R.color.dullColor));
+            signupButton.setBackgroundColor(getResources().getColor(R.color.brightColor));
     }
 
     public void signIn (View view)
     {
             loginBox.setHint(R.string.usernameHint);
-            loginButton.setText(R.string.signIn);
+            signupButton.setText(R.string.signIn);
+            signupButton.setBackgroundColor(getResources().getColor(R.color.dullColor));
+            signinButton.setBackgroundColor(getResources().getColor(R.color.brightColor));
     }
 
-    //public void enterApp()
+
 
 }
