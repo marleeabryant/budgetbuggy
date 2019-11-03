@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
     public void signUp(View view)
     {
             loginBox.setHint(R.string.emailHint);
-            signupButton.setText(R.string.signUp);
             signinButton.setBackgroundColor(getResources().getColor(R.color.dullColor));
             signupButton.setBackgroundColor(getResources().getColor(R.color.brightColor));
     }
@@ -45,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
     public void signIn (View view)
     {
             loginBox.setHint(R.string.usernameHint);
-            signupButton.setText(R.string.signIn);
             signupButton.setBackgroundColor(getResources().getColor(R.color.dullColor));
             signinButton.setBackgroundColor(getResources().getColor(R.color.brightColor));
     }
