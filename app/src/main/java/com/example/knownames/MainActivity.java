@@ -33,15 +33,13 @@ public class MainActivity extends AppCompatActivity {
         signupButton = (Button) findViewById(R.id.signUpButton);
         signinButton = (Button) findViewById(R.id.signInButton);
 
-
-
     }
 
     public void enterAppSignUp(View view){
-        /*Intent signUpIntent = new Intent(this, SignUpActivity.class);
+        Intent signUpIntent = new Intent(this, SignUpActivity.class);
         String email = loginBox.getText().toString();
         signUpIntent.putExtra(SIGNUP_MESSAGE, email);
-        startActivity(signUpIntent);*/
+        startActivity(signUpIntent);
     }
 
     public void signUp(View view)
