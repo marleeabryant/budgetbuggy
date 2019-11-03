@@ -20,4 +20,18 @@
     <string name="addItem">Add Item</string>
     <string name="viewBudget">View Budget</string>
     <string name="viewShoppingList">View Shopping List</string>
+    <string name="Item1">Milk</string>
+    <string name="Item1Type">Food</string>
+    <string name="Item1Store">Target $5</string>
+    <string name="Item2">Lotion</string>
+    <string name="Item2Type">Cosmetic</string>
+    <string name="Item2Store">Sephora $30</string>
+    <string name="Item3">Paper Towels</string>
+    <string name="Item3Type">Cleaning</string>
+    <string name="Item3Store">Target $3</string>
+    <string name="Item4">Toothpaste</string>
+    <string name="Item4Type">Toiletry</string>
+    <string name="Item4Store">CVS $7</string>
+    <string name="ShoppingList">Shopping List</string>
+    <string name="CartCost">Cart Total: $45</string>
 </resources>

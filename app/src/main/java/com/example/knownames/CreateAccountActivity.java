@@ -44,6 +44,7 @@ public class CreateAccountActivity extends AppCompatActivity {
 
     }
     public void FromViewShoppingList(View view){
-
+        Intent shoppingListIntent = new Intent(this, ShoppingListActivity.class);
+        startActivity(shoppingListIntent);
     }
 }
