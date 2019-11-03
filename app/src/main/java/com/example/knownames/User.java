@@ -11,7 +11,7 @@ public class User {
     Budget currBudget;
     ArrayList<Item> userItems;
     ShoppingList currShopList;
-    Double budgetAmt;
+    double budgetAmt;
     int shopPeriod;
     int budgetPeriod;
 
@@ -42,12 +42,29 @@ public class User {
        /* public void addStore (String name){
             Store pref = new Store(name);
             preferredStores.add(pref);
+        } */
+
+        public void addItem (String ty, String nm, String strnm, double strprc, boolean need){
+            Item myItem = new Item(ty, nm, strnm, strprc, need);
+            userItems.add(myItem);
         }
 
-        public void addItem (String ty, String nm, boolean need){
-            Item myItem = new Item(ty, nm, strprice, need);
-            userItems.add(myItem);
-        }*/
+        public void createBudget () {
+            for(int i = 0; i < userItems.size(); i++)
+            {
+                if(userItems.get(i).budgetStatus) {
+                    currBudget.addItem(userItems.get(i));
+                }
+            }
+        }
 
+        public void createShoppingList () {
+            for(int i = 0; i < userItems.size(); i++)
+            {
+                if(userItems.get(i).listStatus) {
+                    currShopList.addItemToCart(userItems.get(i));
+                }
+            }
+        }
     }
 

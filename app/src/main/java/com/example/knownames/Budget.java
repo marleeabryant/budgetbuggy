@@ -32,6 +32,18 @@ public class Budget {
         this.totalCost = totalCost;
     }
 
+    public void addItem(Item myItem) {
+        budItems.add(myItem);
+    }
+
+    public double calcTotalCost() {
+        double sum=0.0;
+        for(int i=0;i<budItems.size();i++) {
+            sum = sum + budItems.get(i).getStrPrice();
+        }
+        return sum;
+    }
+
     @Override
     public String toString() {
         return "Budget Items: " + budItems +

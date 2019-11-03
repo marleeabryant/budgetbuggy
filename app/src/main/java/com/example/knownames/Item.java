@@ -27,6 +27,10 @@ public class Item {
         }
     }
 
+    public double getStrPrice() {
+        return price.getPriceAtStore();
+    }
+
 
     public void addDate(int tm, int lp) {
         lastPurchased = lp;

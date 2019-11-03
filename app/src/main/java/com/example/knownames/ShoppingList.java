@@ -32,4 +32,16 @@ public class ShoppingList {
         this.cartCost = cartCost;
     }
 
+    public void addItemToCart(Item myItem) {
+        shopItems.add(myItem);
+    }
+
+    public double calcTotalCartCost() {
+        double sum=0.0;
+        for(int i=0;i<shopItems.size();i++) {
+            sum += shopItems.get(i).getStrPrice();
+        }
+        return sum;
+    }
+
 }
