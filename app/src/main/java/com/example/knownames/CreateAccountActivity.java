@@ -3,6 +3,7 @@ package com.example.knownames;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 import com.example.knownames.User;
 
@@ -29,6 +30,20 @@ public class CreateAccountActivity extends AppCompatActivity {
 
 
 
+
+    }
+
+
+    public void FromEditInfo(View view){
+
+    }
+    public void FromAddItem(View view){
+
+    }
+    public void FromViewBudget(View view){
+
+    }
+    public void FromViewShoppingList(View view){
 
     }
 }
