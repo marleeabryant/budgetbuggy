@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         loginBox = (EditText) findViewById(R.id.loginBox);
         signupButton = (Button) findViewById(R.id.signUpButton);
         signinButton = (Button) findViewById(R.id.signInButton);
+
+
     }
 
 //    public void enterApp(View view){
