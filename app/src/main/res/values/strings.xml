@@ -34,4 +34,10 @@
     <string name="Item4Store">CVS $7</string>
     <string name="ShoppingList">Shopping List</string>
     <string name="CartCost">Cart Total: $45</string>
+    <string name="item1">Milk</string>
+    <string name="item2">Paper Towels</string>
+    <string name="subItem1">$5</string>
+    <string name="subItem2">$3</string>
+    <string name="totalCost">Total Cost: $8</string>
+
 </resources>
