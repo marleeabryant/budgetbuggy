@@ -11,4 +11,9 @@
     <string name="emailHint">Email</string>
     <string name="usernameHint">Username</string>
     <string name="passwordHint">Password</string>
+    <string name="budgetAmtHint">Budget Amount</string>
+    <string name="budgetTimeHint">Budget Time in Days</string>
+    <string name="shoppingTimeHint">Shopping Time in Days</string>
+    <string name="addItemText">Add Item</string>
+    <string name="exitText">Create Account</string>
 </resources>
