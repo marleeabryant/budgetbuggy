@@ -16,4 +16,8 @@
     <string name="shoppingTimeHint">Shopping Time in Days</string>
     <string name="addItemText">Add Item</string>
     <string name="exitText">Create Account</string>
+    <string name="exitInfo">Edit Info</string>
+    <string name="addItem">Add Item</string>
+    <string name="viewBudget">View Budget</string>
+    <string name="viewShoppingList">View Shopping List</string>
 </resources>
