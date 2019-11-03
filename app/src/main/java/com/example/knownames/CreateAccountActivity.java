@@ -41,6 +41,8 @@ public class CreateAccountActivity extends AppCompatActivity {
 
     }
     public void FromViewBudget(View view){
+        Intent viewBudgetIntent = new Intent(this, ViewBudgetActivity.class);
+        startActivity(viewBudgetIntent);
 
     }
     public void FromViewShoppingList(View view){
