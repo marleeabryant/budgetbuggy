@@ -35,7 +35,8 @@ public class CreateAccountActivity extends AppCompatActivity {
 
 
     public void FromEditInfo(View view){
-
+        Intent signUpIntent = new Intent(this, SignUpActivity.class);
+        startActivity(signUpIntent);
     }
     public void FromAddItem(View view){
 

@@ -39,6 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:background="#ED3995"
+        android:onClick="FromViewShoppingList"
         android:text="@string/viewShoppingList"
         android:textColor="#f9f9f9"
         app:layout_constraintEnd_toEndOf="parent"
