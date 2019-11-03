@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     public static final String SIGNUP_MESSAGE = "com.company.budgetbuggy.MESSAGE";
+    public static final String PASSWORD_MESSAGE = "com.company.budgetbuggy.MESSAGE";
     private ImageView imageView;
     private EditText loginBox;
     private EditText passwordBox;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView signupView;
     private Button signupButton;
     private Button signinButton;
+
 
 
 
@@ -38,7 +40,9 @@ public class MainActivity extends AppCompatActivity {
     public void enterAppSignUp(View view){
         Intent signUpIntent = new Intent(this, SignUpActivity.class);
         String email = loginBox.getText().toString();
+        String password = passwordBox.getText().toString();
         signUpIntent.putExtra(SIGNUP_MESSAGE, email);
+        signUpIntent.putExtra(PASSWORD_MESSAGE, password);
         startActivity(signUpIntent);
     }
 

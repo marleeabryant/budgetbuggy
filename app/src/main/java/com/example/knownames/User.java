@@ -24,9 +24,11 @@ public class User {
         budgetAmt = 100.0;
         shopPeriod = 14;
         budgetPeriod = 30;
+
+
     }
 
-        public void setBudgetAmt ( double amt){
+    public void setBudgetAmt (double amt){
             budgetAmt = amt;
         }
 
@@ -37,6 +39,8 @@ public class User {
         public void setShopPeriod ( int per){
             shopPeriod = per;
         }
+
+        public int getShopPeriod () {return shopPeriod;}
 
         // add methods to MainActivity
        /* public void addStore (String name){
