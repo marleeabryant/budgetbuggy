@@ -1,5 +1,6 @@
 package com.example.knownames;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,13 +10,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
+    public static final String SIGNUP_MESSAGE = "com.company.budgetbuggy.MESSAGE";
     private ImageView imageView;
     private EditText loginBox;
+    private EditText passwordBox;
     private TextView signinView;
     private TextView signupView;
     private Button signupButton;
     private Button signinButton;
+
 
 
     @Override
@@ -26,13 +29,20 @@ public class MainActivity extends AppCompatActivity {
         signinView = (TextView) findViewById(R.id.signinView);
         signupView = (TextView) findViewById(R.id.signupView);
         loginBox = (EditText) findViewById(R.id.loginBox);
+        passwordBox = (EditText) findViewById(R.id.passwordBox);
         signupButton = (Button) findViewById(R.id.signUpButton);
         signinButton = (Button) findViewById(R.id.signInButton);
+
+
+
     }
 
-//    public void enterApp(View view){
-//        Intent intent = new Intent(this, )
-//    }
+    public void enterAppSignUp(View view){
+        Intent signUpIntent = new Intent(this, SignUpActivity.class);
+        String email = loginBox.getText().toString();
+        signUpIntent.putExtra(SIGNUP_MESSAGE, email);
+        startActivity(signUpIntent);
+    }
 
     public void signUp(View view)
     {
@@ -47,7 +57,5 @@ public class MainActivity extends AppCompatActivity {
             signupButton.setBackgroundColor(getResources().getColor(R.color.dullColor));
             signinButton.setBackgroundColor(getResources().getColor(R.color.brightColor));
     }
-
-
 
 }

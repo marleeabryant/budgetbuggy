@@ -45,7 +45,7 @@
         tools:targetApi="o" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/passwordBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -101,10 +101,11 @@
         android:layout_marginLeft="117dp"
         android:layout_marginTop="20dp"
         android:background="#ED3995"
+        android:onClick="enterAppSignUp"
         android:text="@string/signUp"
         android:textColor="#f9f9f9"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordBox" />
 
     <Button
         android:id="@+id/signInButton"
@@ -117,6 +118,6 @@
         android:text="@string/signIn"
         android:textColor="#f9f9f9"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordBox" />
 
 </android.support.constraint.ConstraintLayout>
